@@ -1,0 +1,45 @@
+
+<h1>Update Admin</h1>
+
+<form #updateform = ngForm (ngSubmit) = "updateform.valid && updateAdmin(updateform)">
+    <div>
+        <label>Admin Id: </label>
+        <input name = "adminid" ngModel #adminidControl=ngModel required >
+    </div>
+    <div *ngIf = "adminidControl.errors!=null && adminidControl.errors.required" class="error">
+        Id is required
+    </div>
+
+    <div>
+        <label>Username: </label>
+        <input name = "username" ngModel #usernameControl=ngModel required minlength="3">
+    </div>
+    <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.required" class="error">
+        Username is required
+    </div>
+    <div *ngIf = "usernameControl.errors!=null && usernameControl.errors.minlength" class="error">
+        Minimum length is 3
+    </div>
+
+    <div>
+        <label>Password</label>
+        <input name = "password" ngModel #passwordControl=ngModel required> 
+    </div>
+    <div *ngIf = "passwordControl.errors!=null && passwordControl.errors.required" class="error">
+        Password is required
+    </div>
+
+
+    <div>
+        <label>Mobile number</label>
+        <input name = "mobileNumber" ngModel>
+    </div>
+    <div>
+        <label>Email</label>
+        <input name = "email" ngModel>
+    </div>
+    <input type="submit" value="Update Details">
+</form>
+
+
+<p>update-admin works!</p>

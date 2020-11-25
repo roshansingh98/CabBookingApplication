@@ -18,4 +18,13 @@ export class AdminService{
         return observable;              
     }
 
+    updateAdmin(admin:FetchAdmin):Observable<FetchAdmin>{
+        let id = admin.id;
+
+        const url = this.baseURL + "/update/" + id;
+
+        let observable:Observable<FetchAdmin> = this.http.put<FetchAdmin>(url,admin);
+        return observable;
+    }
+
 }

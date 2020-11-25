@@ -7,12 +7,14 @@ import { AddAdminComponent } from './add-admin/add-admin.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminService } from './service/adminservice';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { UpdateAdminComponent } from './update-admin/update-admin.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddAdminComponent
+    AddAdminComponent,
+    UpdateAdminComponent
   ],
   imports: [
     BrowserModule,
