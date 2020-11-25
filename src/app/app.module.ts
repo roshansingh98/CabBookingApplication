@@ -9,14 +9,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminService } from './service/adminservice';
 import { HttpClientModule } from '@angular/common/http';
 import { UpdateAdminComponent } from './update-admin/update-admin.component';
-import { DeleteAdminComponent } from './delete-admin/delete-admin.component'
+import { DeleteAdminComponent } from './delete-admin/delete-admin.component';
+import { AddCustomerComponent } from './add-customer/add-customer.component'
+import { CustomerService } from './service/customerservice';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddAdminComponent,
     UpdateAdminComponent,
-    DeleteAdminComponent
+    DeleteAdminComponent,
+    AddCustomerComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,7 @@ import { DeleteAdminComponent } from './delete-admin/delete-admin.component'
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [AdminService],
+  providers: [AdminService , CustomerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
