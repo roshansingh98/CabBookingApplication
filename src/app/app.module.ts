@@ -8,13 +8,15 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminService } from './service/adminservice';
 import { HttpClientModule } from '@angular/common/http';
-import { UpdateAdminComponent } from './update-admin/update-admin.component'
+import { UpdateAdminComponent } from './update-admin/update-admin.component';
+import { DeleteAdminComponent } from './delete-admin/delete-admin.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     AddAdminComponent,
-    UpdateAdminComponent
+    UpdateAdminComponent,
+    DeleteAdminComponent
   ],
   imports: [
     BrowserModule,

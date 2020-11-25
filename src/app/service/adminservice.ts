@@ -27,4 +27,10 @@ export class AdminService{
         return observable;
     }
 
+    deleteAdmin(id:number){
+        const url = this.baseURL + "/delete/" + id;
+
+        return this.http.delete(url);
+    }
+
 }
