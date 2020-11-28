@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { AdminGetTripsByIdComponent } from './admin-get-trips-by-id/admin-get-trips-by-id.component';
 import { GetTripsCustomerWiseComponent } from './get-trips-customer-wise/get-trips-customer-wise.component';
 import { GetTripsCabWiseComponent } from './get-trips-cab-wise/get-trips-cab-wise.component';
+import { GetTripsDateWiseComponent } from './get-trips-date-wise/get-trips-date-wise.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { GetTripsCabWiseComponent } from './get-trips-cab-wise/get-trips-cab-wis
     HomeComponent,
     AdminGetTripsByIdComponent,
     GetTripsCustomerWiseComponent,
-    GetTripsCabWiseComponent
+    GetTripsCabWiseComponent,
+    GetTripsDateWiseComponent
   ],
   imports: [
     BrowserModule,

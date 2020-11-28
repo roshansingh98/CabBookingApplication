@@ -55,4 +55,11 @@ export class AdminService{
         return response;
     }
 
+    findTripsDateWise():Observable<TripBooking[]>{
+        const url = this.baseURL + "/retrieve/getTripsDatewise";
+
+        let response:Observable<TripBooking[]> = this.http.get<TripBooking[]>(url);
+        return response;
+    }
+
 }
