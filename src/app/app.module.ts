@@ -14,6 +14,7 @@ import { AddCustomerComponent } from './add-customer/add-customer.component'
 import { CustomerService } from './service/customerservice';
 import { HomeComponent } from './home/home.component';
 import { AdminGetTripsByIdComponent } from './admin-get-trips-by-id/admin-get-trips-by-id.component';
+import { GetTripsCustomerWiseComponent } from './get-trips-customer-wise/get-trips-customer-wise.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AdminGetTripsByIdComponent } from './admin-get-trips-by-id/admin-get-tr
     DeleteAdminComponent,
     AddCustomerComponent,
     HomeComponent,
-    AdminGetTripsByIdComponent
+    AdminGetTripsByIdComponent,
+    GetTripsCustomerWiseComponent
   ],
   imports: [
     BrowserModule,
