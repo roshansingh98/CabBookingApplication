@@ -12,6 +12,8 @@ import { UpdateAdminComponent } from './update-admin/update-admin.component';
 import { DeleteAdminComponent } from './delete-admin/delete-admin.component';
 import { AddCustomerComponent } from './add-customer/add-customer.component'
 import { CustomerService } from './service/customerservice';
+import { HomeComponent } from './home/home.component';
+import { AdminGetTripsByIdComponent } from './admin-get-trips-by-id/admin-get-trips-by-id.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { CustomerService } from './service/customerservice';
     AddAdminComponent,
     UpdateAdminComponent,
     DeleteAdminComponent,
-    AddCustomerComponent
+    AddCustomerComponent,
+    HomeComponent,
+    AdminGetTripsByIdComponent
   ],
   imports: [
     BrowserModule,

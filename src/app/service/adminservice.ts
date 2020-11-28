@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { AddAdmin } from '../model/adminAdd';
 import { FetchAdmin } from '../model/adminFetch';
+import { TripBooking } from '../model/tripbooking';
 
 @Injectable()
 export class AdminService{
@@ -31,6 +32,13 @@ export class AdminService{
         const url = this.baseURL + "/delete/" + id;
 
         return this.http.delete(url);
+    }
+
+    findTripsByCustomerId(id:number){
+        const url = this.baseURL + "/retrieve/tripsBooking/" + id;
+
+        let resp = this.http.get(url);
+        return resp;
     }
 
 }

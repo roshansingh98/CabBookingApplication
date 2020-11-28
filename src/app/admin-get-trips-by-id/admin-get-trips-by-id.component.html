@@ -1,0 +1,20 @@
+<h1>Get all trips By Customer Id</h1>
+
+<form #findTripsByIdform = ngForm (ngSubmit) = "findTripsByIdform.valid && findTrip(findTripsByIdform)">
+    <div>
+        <label>Customer Id: </label>
+        <input name = "customerId" type="number" ngModel #customerIdControl=ngModel required>
+    </div>
+    <div *ngIf = "customerIdControl.errors!=null && customerIdControl.errors.required" class="error">
+        Id is required
+    </div>
+
+    <input type="submit" value="Submit Details">
+</form>
+
+
+<p>admin-get-trips-by-id works!</p>
+
+<li *ngFor="let trip of trips;">
+    {{trip.status}} {{trip.customerId}} {{trips.fromLocation}}
+</li>
