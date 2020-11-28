@@ -41,6 +41,13 @@ export class AdminService{
         return resp;
     }
 
+    findTripsCabWise():Observable<TripBooking[]>{
+        const url = this.baseURL + "/retrieve/getCabWise";
+
+        let response:Observable<TripBooking[]> = this.http.get<TripBooking[]>(url);
+        return response;
+    }
+
     findTripsCustomerWise():Observable<TripBooking[]>{
         const url = this.baseURL + "/retrieve/getTripsCustomerwise";
 
